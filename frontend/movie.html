@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">Movies Hub</div>
+        <nav class="header__nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="search.html" class="nav__link">Search</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="player-section">
+            <h2>Now Playing</h2>
+            <video id="videoPlayer" controls autoplay>
+                Your browser does not support the video tag.
+            </video>
+        </section>
+    </main>
+
+    <script src="player.js"></script>
+</body>
+</html>

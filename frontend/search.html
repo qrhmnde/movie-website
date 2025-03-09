@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Movies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">Movies Hub</div>
+        <nav class="header__nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">TV Shows</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Movies</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="search-section">
+            <h2>Search Movies</h2>
+            <input type="text" id="searchInput" placeholder="Enter movie name...">
+            <button onclick="searchMovies()">Search</button>
+        </section>
+        
+        <section class="movie-results" id="searchResults">
+            <!-- Search results will be displayed here -->
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

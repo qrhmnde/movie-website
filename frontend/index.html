@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">Movies Hub</div>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">TV Shows</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Movies</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">My List</a></li>
+                </ul>
+            </nav>
+            <div class="header__search">
+                <input type="text" id="searchBox" placeholder="Search" class="search__input">
+                <button class="search__button" onclick="searchMovies()">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero__content">
+            <h1 class="hero__title">Watch Amazing Movies</h1>
+            <p class="hero__subtitle">Enjoy a wide selection of movies and shows.</p>
+            <button class="hero__button">Browse Now</button>
+        </div>
+    </section>
+
+    <main class="main-content">
+        <section class="movie-row">
+            <h2 class="row__title">Trending Now</h2>
+            <div class="movie-list" id="trendingMovies"></div>
+        </section>
+
+        <section class="movie-row">
+            <h2 class="row__title">Popular Movies</h2>
+            <div class="movie-list" id="popularMovies"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <p>&copy; 2024 Movies Hub. All rights reserved.</p>
+            <ul class="footer__links">
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
